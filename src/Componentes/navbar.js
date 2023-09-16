@@ -1,26 +1,25 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './navBarStyles.css';
-import {FaBars, FaTimes} from "react-icons/fa";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./navBarStyles.css";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-  const [click,setClick] = useState(false);
-  const handleClick = () => setClick(!click); 
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
 
-  const [color,setColor] = useState(false);
+  const [color, setColor] = useState(false);
   const changeColor = () => {
-    if (window.scrollY >= 100){
+    if (window.scrollY >= 100) {
       setColor(true);
-    }
-    else {
+    } else {
       setColor(false);
     }
   };
   window.addEventListener("scroll", changeColor);
   return (
-    <div className={color ? "header header-bg":"header"}>
+    <div className={color ? "header header-bg" : "header"}>
       <Link to="/">
-        <h1>Portfolio</h1>
+        <h1 className="header-text">Portfolio</h1>
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>
@@ -36,14 +35,12 @@ const Navbar = () => {
           <Link to="/Contact">Contact</Link>
         </li>
       </ul>
-      <div className='burger' onClick={handleClick}>
-      {click ? (
-        <FaTimes size={20} style={{ color: '#FFF' }} />
-      ) : (
-        <FaBars size={20} style={{ color: '#FFF' }} />
-      )}
-
-        
+      <div className="burger" onClick={handleClick}>
+        {click ? (
+          <FaTimes size={20} style={{ color: "#FFF" }} />
+        ) : (
+          <FaBars size={20} style={{ color: "#FFF" }} />
+        )}
       </div>
     </div>
   );
