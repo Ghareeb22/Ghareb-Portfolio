@@ -5,10 +5,12 @@ import About from "./routes/about";
 import Projects from "./routes/projects";
 import Contact from "./routes/contact";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./Componentes/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Projects />} />
