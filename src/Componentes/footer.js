@@ -31,7 +31,7 @@ const footer = () => {
                 size={20}
                 style={{ color: "#FFF", marginRight: "2rem" }}
               />
-              01145776860
+              +201145776860
             </h4>
           </div>
           <div className="email">
@@ -40,7 +40,7 @@ const footer = () => {
                 size={20}
                 style={{ color: "#FFF", marginRight: "2rem" }}
               />
-              moghareb22@gmail.com
+              mohamed.ghareb22122@gmail.com
             </h4>
           </div>
         </div>
@@ -67,6 +67,12 @@ const footer = () => {
             </a>
             <a href="https://twitter.com/?lang=en">
               <FaTwitter
+                size={20}
+                style={{ color: "#FFF", marginRight: "2rem" }}
+              />
+            </a>
+            <a href="https://mail.google.com/mail/u/2/#inbox?compose=jrjtXJSVdNHZmgNdckkbStFLxsDkDNHspHTwgGnCfLTwgxkGCDpfjKvCHVcKzKKxdMJNKpMW">
+              <FaMailBulk
                 size={20}
                 style={{ color: "#FFF", marginRight: "2rem" }}
               />
